@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//#define MAX_SIZE 100  // Definir o tamanho máximo para arrays
+#define MAX_SIZE 100  // Definir o tamanho máximo para arrays
 
 // Estrutura para armazenar os dados de cada tipo
 typedef struct {
