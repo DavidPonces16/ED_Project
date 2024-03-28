@@ -13,9 +13,15 @@ int main() {
     // Abre os arquivos tipo txt
     FILE *concelhos_file = fopen("concelhos.txt", "r");
 
+<<<<<<< Updated upstream
     // Verificando se os arquivos foram abertos corretamente
     if (concelhos_file == NULL || concelhos_file == NULL || concelhos_file == NULL || concelhos_file == NULL) {
         perror("Erro ao abrir arquivo");
+=======
+    // Verificando se o ficheiro foi aberto corretamente
+    if (concelhos_file == NULL) {
+        printf("Erro ao abrir arquivo");
+>>>>>>> Stashed changes
         return 1; // Retorna 1 para indicar erro
     }
 
@@ -35,7 +41,7 @@ int main() {
 
     // Exemplo de uso dos dados (você pode modificar conforme necessário)
     printf("Concelhos:\n");
-    for (int j = 0; j < i; j++) {
+        for (int j = 0; j < i; j++) {
         printf("%d: %s\n", concelhos[j].id, concelhos[j].nome);
     }
 

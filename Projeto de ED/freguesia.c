@@ -5,7 +5,7 @@
 
 // Estrutura para armazenar os dados de cada tipo
 typedef struct {
-    int id;
+    int id[6];
     char nome[MAX_SIZE];
 } Dado;
 
@@ -13,9 +13,15 @@ int main() {
     // Abrindo os arquivos TXT
     FILE *freguesia_file = fopen("freguesia.txt", "r");
 
+<<<<<<< Updated upstream
     // Verificando se os arquivos foram abertos corretamente
     if (freguesia_file == NULL || freguesia_file == NULL || freguesia_file == NULL || freguesia_file == NULL) {
         perror("Erro ao abrir arquivo");
+=======
+    // Verificando se o ficheiro foi aberto corretamente
+    if (freguesia_file == NULL) {
+        printf("Erro ao abrir arquivo");
+>>>>>>> Stashed changes
         return 1; // Retorna 1 para indicar erro
     }
 

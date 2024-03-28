@@ -17,9 +17,15 @@ int main() {
     // Abre o ficheiro TXT
     FILE *requisitantes_file = fopen("requisitantes.txt", "r");
 
+<<<<<<< Updated upstream
     // Verificando se os arquivos foram abertos corretamente
     if (requisitantes_file == NULL || requisitantes_file == NULL || requisitantes_file == NULL || requisitantes_file == NULL) {
         perror("Erro ao abrir arquivo");
+=======
+    // Verificando se o ficheiro foram abertos corretamente
+    if (requisitantes_file == NULL) {
+        printf("Erro ao abrir arquivo");
+>>>>>>> Stashed changes
         return 1; // Retorna 1 para indicar erro
     }
 

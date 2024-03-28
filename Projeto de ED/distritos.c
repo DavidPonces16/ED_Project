@@ -13,9 +13,15 @@ int main() {
     // Abrindo os arquivos TXT
     FILE *distritos_file = fopen("distritos.txt", "r");
 
+<<<<<<< Updated upstream
     // Verificando se os arquivos foram abertos corretamente
     if (distritos_file == NULL || distritos_file == NULL || distritos_file == NULL || distritos_file == NULL) {
         perror("Erro ao abrir arquivo");
+=======
+    // Verificando se o ficheiro foi aberto corretamente
+    if (distritos_file == NULL) {
+        printf("Erro ao abrir arquivo");
+>>>>>>> Stashed changes
         return 1; // Retorna 1 para indicar erro
     }
 
